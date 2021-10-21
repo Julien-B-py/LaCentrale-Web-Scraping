@@ -1,17 +1,33 @@
 ,Model,Version,Price,Mileage,Year,URL,Location,Seller,Good deal?
-1,HONDA CIVIC 10 TYPE R,X 2.0 I-VTEC 320 TYPE-R GT,45700,6041,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109450330.html,75,Professionnel,Analyse indisponible
-2,HONDA CIVIC 10,X 1.0 I-VTEC 129 EXECUTIVE 5P,16490,73583,2018,https://www.lacentrale.fr/auto-occasion-annonce-69109451291.html,35,Professionnel,Offre équitable
-3,HONDA CIVIC 9,IX 1.8 I-VTEC 142 EXECUTIVE,9990,65000,2012,https://www.lacentrale.fr/auto-occasion-annonce-69109450051.html,01,Professionnel,Bonne affaire
-4,HONDA CIVIC 9,1.8 I-VTEC 142CH EXECUTIVE,11480,51608,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109451171.html,78,Professionnel,Analyse indisponible
-5,HONDA CIVIC 8,VIII (2) 1.4 I-VTEC 100 VIRTUOSE 5P,5990,147687,2010,https://www.lacentrale.fr/auto-occasion-annonce-69109450900.html,78,Professionnel,Offre équitable
-6,HONDA CIVIC 10,X 1.0 I-VTEC 129 6CV EXECUTIVE 5P,22490,15218,2020,https://www.lacentrale.fr/auto-occasion-annonce-69109446839.html,19,Professionnel,Offre équitable
-7,HONDA CIVIC 10,X (2) 1.0 I-VTEC 126 EXECUTIVE 5P,20800,28610,2020,https://www.lacentrale.fr/auto-occasion-annonce-87102178177.html,19,Professionnel,Bonne affaire
-8,HONDA CIVIC 8 TYPE R,VIII 2.0 I-VTEC 201 TYPE R HERITAGE,9800,167400,2008,https://www.lacentrale.fr/auto-occasion-annonce-66101771110.html,87,Particulier,Bonne affaire
-9,HONDA CIVIC 8,VIII 1.8 I-VTEC 140 TYPE S,6990,142147,2007,https://www.lacentrale.fr/auto-occasion-annonce-87102177507.html,77,Professionnel,Au dessus du marché
-10,HONDA CIVIC 10,X 1.0 I-VTEC 129 ELEGANCE 5P,18990,28798,2018,https://www.lacentrale.fr/auto-occasion-annonce-69109440992.html,56,Professionnel,Offre équitable
-11,HONDA CIVIC 8,VIII 1.4 I-DSI 83 COMFORT 5P,5495,135000,2006,https://www.lacentrale.fr/auto-occasion-annonce-87102176202.html,77,Professionnel,Offre équitable
-12,HONDA CIVIC 10,X 1.0 I-VTEC 129 EXECUTIVE 5P,17995,53500,2018,https://www.lacentrale.fr/auto-occasion-annonce-69109442578.html,83,Professionnel,Offre équitable
-13,HONDA CIVIC 10,X 1.0 I-VTEC 129 6CV EXECUTIVE 5P,18490,26564,2019,https://www.lacentrale.fr/auto-occasion-annonce-87102176285.html,84,Professionnel,Bonne affaire
-14,HONDA CIVIC 10,X 1.0 I-VTEC 129 EXECUTIVE 5P,17990,58778,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109439181.html,93,Professionnel,Au dessus du marché
-15,HONDA CIVIC 10,X 1.0 I-VTEC 129 EXECUTIVE 5P,18490,25571,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109437540.html,49,Professionnel,Offre équitable
-16,HONDA CIVIC 10 TYPE R,X 2.0 I-VTEC 320 TYPE-R GT,45700,6041,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109436336.html,06,Professionnel,Analyse indisponible
+1,PORSCHE CAYENNE 2,II (2) 3.0 S E-HYBRID TIPTRONIC,49990,69297,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109455675.html,39,Professionnel,Bonne affaire
+2,PORSCHE CAYENNE 3,III 3.0 V6 340,67900,83064,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109457031.html,75,Professionnel,Offre équitable
+3,PORSCHE MACAN,3.6 V6 TURBO,64800,34854,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109455427.html,67,Professionnel,Bonne affaire
+4,PORSCHE MACAN,(2) 3.0 S 354,74700,28590,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109455436.html,67,Professionnel,Analyse indisponible
+5,PORSCHE PANAMERA 2,II 4E-HYBRID 19CV,89900,52182,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109454642.html,31,Professionnel,Offre équitable
+6,PORSCHE PANAMERA 2 SPORT TURISMO,II SPORT TURISMO TURBO,129900,21000,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109457383.html,98,Professionnel,Analyse indisponible
+7,PORSCHE PANAMERA 2,II 4S,99900,22534,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109454569.html,66,Professionnel,Bonne affaire
+8,PORSCHE MACAN,3.0 V6 S DIESEL,52990,70558,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109455868.html,33,Professionnel,Offre équitable
+9,PORSCHE CAYMAN TYPE 987,(987) 3.4 295 S TIPTRONIC S,38000,76800,2007,https://www.lacentrale.fr/auto-occasion-annonce-69109455946.html,83,Professionnel,Analyse indisponible
+10,PORSCHE MACAN,(2) 3.0 S 354,84990,35000,2019,https://www.lacentrale.fr/auto-occasion-annonce-69109458303.html,77,Professionnel,Analyse indisponible
+11,PORSCHE BOXSTER 2 TYPE 987,II (987) (2) 2.9 256,39900,52998,2011,https://www.lacentrale.fr/auto-occasion-annonce-69109455001.html,63,Professionnel,Analyse indisponible
+12,PORSCHE CAYENNE 2,II (2) 4.8 V8 570 TURBO S,83000,12185,2016,https://www.lacentrale.fr/auto-occasion-annonce-69109454758.html,98,Professionnel,Analyse indisponible
+13,PORSCHE CAYENNE 2,II (2) 3.0 V6 D 262 TIPTRONIC,37990,130887,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109456103.html,88,Professionnel,Offre équitable
+14,PORSCHE MACAN,(2) 2.0 245 14CV,81990,16363,2020,https://www.lacentrale.fr/auto-occasion-annonce-69109458621.html,59,Professionnel,Analyse indisponible
+15,PORSCHE MACAN,3.0 V6 S DIESEL,39990,133650,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109457668.html,95,Professionnel,Offre équitable
+16,PORSCHE 911 TYPE 991 GT3 RS,(991) 4.0 500 GT3 RS,174900,25817,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109458351.html,26,Professionnel,Analyse indisponible
+17,PORSCHE 911 TYPE 997,(997) (2) 3.8 385 CARRERA S PDK,82900,43700,2008,https://www.lacentrale.fr/auto-occasion-annonce-69109458348.html,26,Professionnel,Au dessus du marché
+18,PORSCHE TAYCAN,TURBO,147900,13000,2020,https://www.lacentrale.fr/auto-occasion-annonce-69109458354.html,26,Professionnel,Analyse indisponible
+19,PORSCHE BOXSTER 3 TYPE 981,III (981) 3.4 315 S PDK,54980,111273,2013,https://www.lacentrale.fr/auto-occasion-annonce-69109456017.html,80,Professionnel,Au dessus du marché
+20,PORSCHE 911 TYPE 996,(996) TURBO,74990,99850,2001,https://www.lacentrale.fr/auto-occasion-annonce-69109454561.html,31,Professionnel,Analyse indisponible
+21,PORSCHE MACAN,2.0,52990,57000,2018,https://www.lacentrale.fr/auto-occasion-annonce-69109457950.html,83,Professionnel,Bonne affaire
+22,PORSCHE 911 TYPE 997,(997) (2) 3.8 385 CARRERA 4S PDK,70900,53000,2009,https://www.lacentrale.fr/auto-occasion-annonce-69109454364.html,26,Professionnel,Bonne affaire
+23,PORSCHE 911 TYPE 997,(997) 3.6 415 GT3 RS,139990,35104,2008,https://www.lacentrale.fr/auto-occasion-annonce-69109457278.html,83,Professionnel,Analyse indisponible
+24,PORSCHE CAYMAN TYPE 987,(987) 3.4 295 S,27990,137031,2006,https://www.lacentrale.fr/auto-occasion-annonce-69109457890.html,37,Professionnel,Analyse indisponible
+25,PORSCHE 718 CAYMAN,CAYMAN S PDK,67950,34500,2017,https://www.lacentrale.fr/auto-occasion-annonce-69109456262.html,92,Professionnel,Analyse indisponible
+26,PORSCHE 911 TYPE 997,(997) 3.8 355 CARRERA 4S,62900,44992,2006,https://www.lacentrale.fr/auto-occasion-annonce-69109456386.html,30,Professionnel,Analyse indisponible
+27,PORSCHE PANAMERA,(2) 3.0 TD 300 EDITION,41990,136021,2015,https://www.lacentrale.fr/auto-occasion-annonce-69109456421.html,31,Professionnel,Offre équitable
+28,PORSCHE 911 TYPE 996,(996) (2) GT3,65000,76500,2004,https://www.lacentrale.fr/auto-occasion-annonce-87102178595.html,78,Professionnel,Analyse indisponible
+29,PORSCHE 911 TYPE 991 TARGA,(991) (2) 3.0 450 TARGA 4 GTS PDK,158900,44900,2018,https://www.lacentrale.fr/auto-occasion-annonce-87102178469.html,27,Professionnel,Analyse indisponible
+30,PORSCHE CAYENNE 2,II 3.0 V6 D 245,22700,183747,2011,https://www.lacentrale.fr/auto-occasion-annonce-69109450421.html,75,Professionnel,Bonne affaire
+31,PORSCHE 911 TYPE 997,(997) 3.6 325 CARRERA 4 TIPTRONIC S,42900,102239,2006,https://www.lacentrale.fr/auto-occasion-annonce-69109450154.html,75,Professionnel,Bonne affaire
+32,PORSCHE BOXSTER 2 TYPE 987,II (987) (2) 2.9 256,31900,74481,2009,https://www.lacentrale.fr/auto-occasion-annonce-69109450396.html,75,Professionnel,Analyse indisponible

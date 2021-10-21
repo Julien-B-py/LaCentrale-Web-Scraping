@@ -9,3 +9,10 @@ headers = {
     'Cache-Control': 'max-age=0',
     'TE': 'Trailers',
 }
+
+fuel_type = {
+    'diesel': 'dies',
+    'gasoline': 'ess',
+    'hybrid': 'hyb',
+}
+

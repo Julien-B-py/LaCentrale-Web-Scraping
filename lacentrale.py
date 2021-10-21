@@ -1,20 +1,35 @@
 from math import ceil
-import pandas as pd
 import random
 import time
 
 from bs4 import BeautifulSoup
 import requests
 
-from config import headers
+from config import headers, fuel_type
 
 
 class LaCentrale:
-    def __init__(self):
+    def __init__(self, brand="", model="", fuel="", gearbox=""):
+        """
+        Constructs a new LaCentrale object.
+        If none of the parameters is defined it will search for any type of car.
+        @param brand: Specify the car's brand to search for (eg: Ford).
+        @type brand: str
+        @param model: Specify the car's specific model if you need a specific model (eg: Focus)
+        @type model: str
+        @param fuel: Specify the fuel type you are looking for. Possible values : 'diesel', 'gasoline', 'hybrid'
+        @type fuel: str
+        @param gearbox: Specify the gearbox type you are looking for. Possible values : 'auto', 'manual'
+        @type gearbox: str
+        """
+        self.brand = brand
+        self.model = model
+        self.fuel_type = fuel_type.get(fuel.lower())
+        self.gearbox = gearbox
         self.current_page = 1
         self.current_sale = 0
         self.sales = {}
-        self.url = f"https://www.lacentrale.fr/listing?energies=ess&gearbox=MANUAL&makesModelsCommercialNames=HONDA%3ACIVIC&options=&page={self.current_page}&sortBy=firstOnlineDateDesc"
+        self.url = f"https://www.lacentrale.fr/listing?energies={self.fuel_type}&gearbox={self.gearbox}&makesModelsCommercialNames={self.brand}%3A{self.model}&options=&page={self.current_page}&sortBy=firstOnlineDateDesc"
         self.sales_qty = self.get_number_of_sales()
         self.results_pages_qty = self.get_number_of_results_pages()
 
@@ -23,11 +38,13 @@ class LaCentrale:
         Returns an integer representing the total numbers of sales found for the requested car.
         """
         page = requests.get(self.url, headers=headers)
+        # check if an error has occurred
+        page.raise_for_status()
         soup = BeautifulSoup(page.content, "html.parser")
         sales_count = soup.find("span", {"class": "numAnn"})
-        return int(sales_count.get_text())
+        return int(sales_count.get_text().replace(u"\xa0", u""))
 
-    def get_number_of_results_pages(self):
+    def get_number_of_results_pages(self) -> int:
         """
         Returns an integer representing the total numbers of search results pages for the requested car.
         """
@@ -35,7 +52,7 @@ class LaCentrale:
         # To get the total number of pages we just need to divide the total sales per 16
         return ceil(int(self.sales_qty) / 16)
 
-    def collect_current_page_sales(self):
+    def collect_current_page_sales(self) -> dict:
         """
         Returns a dict containing all the sales listed on the current page including all specific information
         (eg: Model, Price, Year, Mileage, etc)
@@ -43,7 +60,8 @@ class LaCentrale:
         print(f"Collecting data from search results page #{self.current_page}.")
 
         response = requests.get(self.url, headers=headers)
-        print(response.status_code)
+        # check if an error has occurred
+        response.raise_for_status()
         soup = BeautifulSoup(response.content, "html.parser")
 
         models = soup.find_all("span", {"class": "searchCard__makeModel"})
@@ -56,18 +74,12 @@ class LaCentrale:
         sellers = soup.find_all("div", {"class": "cbm-txt--default searchCard__customer"})
         good_deals = soup.find_all("span", {"class": "goodDeal-label"})
 
-
-
-        print(models)
-
-
         # Loop through all the lists at the same time
         for (model, version, price, kilometer, year,
              link, department, seller, good_deal) in zip(models, versions, prices, kilometers, years, links,
                                                          departments, sellers, good_deals):
             # Increment sale index for every loop run
             self.current_sale += 1
-            print(self.current_sale)
 
             # Cleaning some unwanted characters from prices and mileages strings and cast as integer
             formatted_price = int(price.get_text().replace(u"\xa0", u"").replace("€", ""))
@@ -86,13 +98,14 @@ class LaCentrale:
                                              "Good deal?": good_deal.get_text(),
                                              }
 
-        print(self.sales)
         return self.sales
 
-    def collect_multiple_pages_sales(self, pages: int = 3):
+    def collect_multiple_pages_sales(self, pages: int = 3) -> dict:
         """
         Returns a dict containing all the sales information (eg: Model, Price, Year, Mileage, etc) from the requested
         number of results pages.
+        @param pages: Specify the number of results pages you want to scrap
+        @type pages: int
         """
         while True:
 
@@ -118,14 +131,4 @@ class LaCentrale:
         """
         Update the url to the current requested results page.
         """
-        self.url = f"https://www.lacentrale.fr/listing?energies=ess&gearbox=MANUAL&makesModelsCommercialNames=HONDA%3ACIVIC&options=&page={self.current_page}&sortBy=firstOnlineDateDesc"
-
-        print(self.url)
-
-
-if __name__ == "__main__":
-    la_centrale = LaCentrale()
-    sales = la_centrale.collect_multiple_pages_sales(pages=3)
-    # Turn data to a dataframe and export as csv file
-    df = pd.DataFrame.from_dict(sales, orient="index")
-    df.to_csv("results.csv")
+        self.url = f"https://www.lacentrale.fr/listing?energies={self.fuel_type}&gearbox={self.gearbox}&makesModelsCommercialNames={self.brand}%3A{self.model}&options=&page={self.current_page}&sortBy=firstOnlineDateDesc"
